@@ -1,0 +1,109 @@
+.header-color {
+
+     background: rgb(24, 1, 29);
+     transition: all .3s cubic-bezier(.02, .25, .06, .92);
+     overflow: hidden;
+     font-family: Open Sans;
+}
+
+.logo {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+}
+
+.a-img {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+}
+
+.star-img {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     ;
+}
+
+.qustion {
+     width: 40px;
+}
+
+.android {
+     width: 10vw;
+
+}
+
+.input {
+     border-radius: 15px;
+}
+
+.input-card {
+     border-bottom-left-radius: 15px;
+     border-top-right-radius: 15px;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.footer-bg {
+     background: rgb(255, 255, 255);
+     color: white;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+     .logo {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+     }
+
+     .fifa-logo {
+          width: 120px;
+          /* height: 100px; */
+     }
+
+     .a-img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+     }
+
+     .android {
+          width: 20vw;
+
+     }
+
+     .qustion-title {
+          font-size: 13px;
+          font-weight: bold;
+
+     }
+
+     .name {
+          font-size: 13px;
+
+     }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+     .logo {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+     }
+
+     .a-img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+     }
+
+     .android {
+          width: 15vw;
+
+     }
+}
