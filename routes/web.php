@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('quiz.quiz');
-});
-
+Route::get('/', [quizController::class, 'index'])->name('index');
 
 Route::post('/quiz-form', [quizController::class, 'quizJoin'])->name('quizUserSubmit');
+Route::get('/quizBody', [quizController::class, 'quizBody'])->name('quizBody');
 Route::post('/quiz-submit', [quizController::class, 'quizSubmit'])->name('quizDataSubmit');
+Route::get('/thanks', [quizController::class, 'thanks'])->name('thanks');
+Route::get('/logout', [quizController::class, 'logout'])->name('logout');

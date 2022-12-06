@@ -6,6 +6,8 @@
         <div class="card rounded-0  border-0 mb-5">
             <div class="card-header card-text lead  bg-warning border-0 rounded-0 =">
                 কুইজ প্রশ্ন
+
+
             </div>
             <div class="card-body m-0 p-0 py-3 my-4">
                 <h5 class="card-title fw-bold">হ্যালো সুপার স্টারস</h5>
@@ -34,39 +36,33 @@
                                 সর্বোচ্চ গোলদাতার নাম কি ?</h3>
 
                             <input type="hidden" name="quiz_question" value="বিশ্বকাপের সর্বোচ্চ গোলদাতার নাম কি">
-
-                            @if ($user->email)
-                                <input type="hidden" name="email" required="" value="{{ $user->email }}">
-                                <input type="hidden" name="phone" required="" value="{{ $user->phone }}">
-                            @endif
-
                             <div class="row px-4">
                                 <div class="d-flex col-md-6 mb-3 form-check align-items-center">
-                                    <input class="form-check-input" type="radio" name="quiz_valu" value="লিওনেল মেসি"
-                                        required id="flexRadioDefault1">
-                                    <label class="form-check-label px-2" for="flexRadioDefault1">
+                                    <input class="form-check-input" type="radio" name="quiz_value" value="লিওনেল মেসি"
+                                        id="ans1">
+                                    <label class="form-check-label px-2" for="ans1">
                                         লিওনেল মেসি <img src="{{ asset('asset/messi.jpg') }}" alt=""
                                             class="star-img">
                                     </label>
                                 </div>
                                 <div class="d-flex col-md-6 mb-3 form-check align-items-center">
-                                    <input class="form-check-input" type="radio" name="quiz_valu" value="পেলে" required
-                                        id="flexRadioDefault1">
-                                    <label class="form-check-label px-2" for="flexRadioDefault1">
+                                    <input class="form-check-input" type="radio" name="quiz_value" value="পেলে"
+                                        id="ans2">
+                                    <label class="form-check-label px-2" for="ans2">
                                         পেলে <img src="{{ asset('asset/pele.jpg') }}" alt="" class="star-img">
                                     </label>
                                 </div>
                                 <div class="d-flex col-md-6 mb-3 form-check align-items-center">
-                                    <input class="form-check-input" type="radio" name="quiz_valu" value="রোনালদো" required
-                                        id="flexRadioDefault1">
-                                    <label class="form-check-label px-2" for="flexRadioDefault1">
+                                    <input class="form-check-input" type="radio" name="quiz_value" value="রোনালদো"
+                                        id="ans3">
+                                    <label class="form-check-label px-2" for="ans3">
                                         রোনালদো <img src="{{ asset('asset/rolando.jpg') }}" alt="" class="star-img">
                                     </label>
                                 </div>
                                 <div class="d-flex col-md-6 mb-3 form-check align-items-center">
-                                    <input class="form-check-input" type="radio" name="quiz_valu" required
-                                        value="মিরোস্লাভ ক্লোসা" id="flexRadioDefault1">
-                                    <label class="form-check-label px-2" for="flexRadioDefault1">
+                                    <input class="form-check-input" type="radio" name="quiz_value"
+                                        value="মিরোস্লাভ ক্লোসা" id="ans4">
+                                    <label class="form-check-label px-2" for="ans4">
                                         মিরোস্লাভ ক্লোসা <img src="{{ asset('asset/closa.webp') }}" alt=""
                                             class="star-img">
                                     </label>
@@ -84,7 +80,7 @@
                                 করছেন?</label>
 
 
-                            <select id="disabledSelect" name="country" class="form-control mt-2 " required>
+                            <select id="disabledSelect" name="country" class="form-control mt-2 ">
                                 <option select value="">দেশের নাম সিলেক্ট করুন</option>
                                 <option value="আর্জেন্টিনা">আর্জেন্টিনা</option>
                                 <option value="ব্রাজিল">ব্রাজিল</option>
@@ -108,36 +104,36 @@
                             <div class="row p-2">
                                 <div class="col-2 form-check">
                                     <input class="form-check-input" type="radio" name="size" value="S"
-                                        id="flexRadioDefault1" required>
-                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        id="">
+                                    <label class="form-check-label" for="">
                                         S
                                     </label>
                                 </div>
                                 <div class="col-2 form-check">
                                     <input class="form-check-input" type="radio" name="size" value="M"
-                                        id="flexRadioDefault1" required>
-                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        id="">
+                                    <label class="form-check-label" for="">
                                         M
                                     </label>
                                 </div>
                                 <div class="col-2 form-check">
                                     <input class="form-check-input" type="radio" name="size" value="L"
-                                        id="flexRadioDefault1" required>
-                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        id="">
+                                    <label class="form-check-label" for="">
                                         L
                                     </label>
                                 </div>
                                 <div class="col-2 form-check">
                                     <input class="form-check-input" type="radio" name="size" value="XL"
-                                        id="flexRadioDefault1" required>
-                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        id="">
+                                    <label class="form-check-label" for="">
                                         XL
                                     </label>
                                 </div>
                                 <div class="col-2 form-check">
                                     <input class="form-check-input" type="radio" name="size" value="XXL"
-                                        id="flexRadioDefault1" required>
-                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        id="">
+                                    <label class="form-check-label" for="">
                                         XXL
                                     </label>
                                 </div>
@@ -147,10 +143,9 @@
                     </div>
                 </div>
 
-
                 <center>
                     <div class="col-md-2">
-
+                        <small class="text-danger">{!! \Session::get('error') !!}</small> <br>
                         <button type="submit" class="btn btn-outline-warning my-4">submit</button>
 
                     </div>
