@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\quizeController;
+use App\Http\Controllers\quizController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,5 +19,5 @@ Route::get('/', function () {
 });
 
 
-Route::post('/quize-form', [quizeController::class, 'QuizeJoin'])->name('quizUserSubmit');
-Route::post('/quize-submit', [quizeController::class, 'QuizSubmit'])->name('quizDataSubmit');
+Route::post('/quiz-form', [quizController::class, 'quizJoin'])->name('quizUserSubmit');
+Route::post('/quiz-submit', [quizController::class, 'quizSubmit'])->name('quizDataSubmit');
