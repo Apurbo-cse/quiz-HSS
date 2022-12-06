@@ -18,7 +18,7 @@ class QuizController extends Controller
         if (Session::has('email') || Session::has('phone')) {
             return redirect()->route('quizBody');
         }
-        return view('quiz.quiz');
+        return view('quiz.index');
     }
     public function quizJoin(Request $request)
     {
@@ -29,15 +29,15 @@ class QuizController extends Controller
                 if ($registerUser) {
                     return redirect()->back()->with("error", "আপনি ইতিমধ্যে নিবন্ধিত, ধন্যবাদ");
                 } else {
-                    Session::put('email',$user->email);
-                    Session::put('phone',$user->phone);
+                    Session::put('email', $user->email);
+                    Session::put('phone', $user->phone);
                     return redirect()->route('quizBody');
                 }
             } else {
-                return redirect()->back()->with("error", "ব্যবহারকারী পাওয়া যায়নি, আগে অ্যাপ নিবন্ধন করুন ");
+                return redirect()->back()->with("error", "ব্যবহারকারী পাওয়া যায়নি, অ্যাপে নিবন্ধন করুন");
             }
         } else {
-            return redirect()->back()->with("error", "অ্যাপ ডাউনলোড করুন এবং তারপর নিবন্ধন করুন");
+            return redirect()->back()->with("error", "ফোন নাম্বার ও ইমেইল ব্যবহার করুন");
         }
     }
 
@@ -63,7 +63,7 @@ class QuizController extends Controller
             $quiz->save();
             return redirect()->route('thanks');
         } else {
-            return redirect()->back()->with("error", "Field Must not be empty");
+            return redirect()->back()->with("error", "তথ্য দিয়ে সমস্ত ডেটা পূরণ করুন");
         }
     }
 

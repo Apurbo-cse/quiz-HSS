@@ -76,12 +76,12 @@
     }
 
     .android {
-        width: 20vw;
+        width: 40vw;
 
     }
 
     .qustion-title {
-        font-size: 13px;
+        font-size: 13.5px;
         font-weight: bold;
 
     }
@@ -89,6 +89,18 @@
     .name {
         font-size: 13px;
 
+    }
+
+    .label-text {
+        font-size: 15px;
+    }
+
+    .header-text {
+        font-size: 12px;
+    }
+
+    .decs-text {
+        font-size: 12px;
     }
 }
 

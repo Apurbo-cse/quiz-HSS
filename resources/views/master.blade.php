@@ -29,7 +29,7 @@
     <div class="fuild-container header-color">
         <div class="container">
             <div class=" p-3 row justify-content-between align-items-center ">
-                <div class="col-lg-2 col-md-2 col-2 text-start"><img src="{{ asset('asset/logo.png') }}" alt=""
+                <div class="col-lg-2 col-md-2 col-2 text-start"><img src="{{ asset('asset/HSS-gif.gif') }}" alt=""
                         class="logo">
                 </div>
 
